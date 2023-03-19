@@ -1,0 +1,94 @@
+.topbarDiv{
+    background: var(--primary-color);
+    height: 70px;
+    margin: 8px 20px 20px 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.topbarDivLeft,
+.topbarDivRight {
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    font-family: 'Cabin';
+    width: 30%;
+}
+
+.alignText {
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+    margin-right: 40px;
+    color: var(--secondary-color);
+    cursor: pointer;
+}
+  
+.alignText span {
+    font-size: 12px;
+    margin-right: 10px;
+    color: var(--button-color);
+}
+
+.topbarDivRight{
+    align-items: center;
+    justify-content: flex-end;
+    height: 50px;
+    width: 70%;
+}
+
+.searchBox{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 350px;
+    border: 1px solid var(--button-color);
+    border-radius: 10px;
+    height: 40px;
+    background: var(--primary-color);
+    padding-left: 10px;
+    margin: 0 25px;
+}
+
+.input{
+    border: none;
+    outline: none;
+    width: 90%;
+    font-family: 'Cabin';
+    font-size: 14px;
+    margin-left: 5px;
+}
+
+@media only screen and (max-width: 928px) {
+    .alignText {
+        margin-right: 15px;
+    }
+
+    .searchBox{
+        width: 250px;
+        margin: 0 10px;
+    }
+}
+
+@media only screen and (max-width: 728px) {
+    .topbarDiv{
+        height: 50px;
+        margin: 3px 10px 10px 10px;
+        padding: 5px 10px;
+    }
+
+    .topbarDivLeft{
+        display: none;
+    }
+
+    .topbarDivRight {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        font-family: 'Cabin';
+        width: 100%;
+    }
+}
